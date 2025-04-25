@@ -5528,7 +5528,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1248974015902180689, guid: b7360c1e5e2e2db42b7ccb1ddef155b7, type: 3}
       propertyPath: m_Name
-      value: Boxman
+      value: bhkk.hbbbj
+      objectReference: {fileID: 0}
+    - target: {fileID: 3014285584699298434, guid: b7360c1e5e2e2db42b7ccb1ddef155b7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5595161761131054540, guid: b7360c1e5e2e2db42b7ccb1ddef155b7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5595161761131054540, guid: b7360c1e5e2e2db42b7ccb1ddef155b7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5595161761131054540, guid: b7360c1e5e2e2db42b7ccb1ddef155b7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5595161761131054540, guid: b7360c1e5e2e2db42b7ccb1ddef155b7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5569,6 +5585,10 @@ PrefabInstance:
     - target: {fileID: 5595161761131054540, guid: b7360c1e5e2e2db42b7ccb1ddef155b7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5595161761131054540, guid: b7360c1e5e2e2db42b7ccb1ddef155b7, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6007918936070002734, guid: b7360c1e5e2e2db42b7ccb1ddef155b7, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -19088,6 +19108,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 989955918408903800, guid: aa9c78261e3534d45987a716c0760f30, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3026399802824742901, guid: aa9c78261e3534d45987a716c0760f30, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -23335,6 +23359,7 @@ GameObject:
   - component: {fileID: 1851459247}
   - component: {fileID: 1851459246}
   - component: {fileID: 1851459245}
+  - component: {fileID: 1851459249}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -23429,6 +23454,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1851459249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851459244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3432e1ab7ce98343afb2baf993aa773, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 0
+  MaxCount: 2000
 --- !u!1001 &1851527048
 PrefabInstance:
   m_ObjectHideFlags: 0
