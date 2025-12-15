@@ -14,12 +14,17 @@ public class MyBoxMan : MonoBehaviour
     public Vector3 rotateDirection;
     public bool flag; 
     public bool otherDir;
+    private @Player player;
     // Start is called before the first frame update
     void Start()
     {
         
     }
-
+    void OnEnable()
+    {
+        player = new @Player();
+        player.Enable();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -41,18 +46,18 @@ public class MyBoxMan : MonoBehaviour
             Speed = MaxSpeed; 
         } 
 
-        if (Input.GetKeyDown("space")){ 
-            Reverse = Reverse * -1; 
-        } 
+        // if (Input.GetKeyDown("space")){ 
+        //     Reverse = Reverse * -1; 
+        // } 
 
-        if (Input.GetKey(KeyCode.B)){// NEW
+        if (player.main.boxmanAddSpeed.IsPressed()){// NEW
             AddSpeed = MaxAddSpeed; 
         } 
         else { 
             AddSpeed = AddSpeedDefault; 
         } 
 
-        if (Input.GetKeyUp(KeyCode.N)){ // NEW
+        if (player.main.boxmanStop.IsPressed()){ // NEW
             Speed = 0; 
         } 
 
